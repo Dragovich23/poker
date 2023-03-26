@@ -1,0 +1,1 @@
+index2.html wykorzystuje AJAX, więc proszę odpalić całość w XAMPPie
