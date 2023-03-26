@@ -39,6 +39,6 @@ $( document ).ready(function() {
       x[i].getElementsByTagName("prawd")[0].childNodes[0].nodeValue +
       "</td></tr><br>";
     }
-    document.getElementsByClassName("sus").innerHTML = table;
+    document.getElementsByClassName("tabl").innerHTML = table;
   }
 
