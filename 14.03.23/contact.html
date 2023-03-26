@@ -20,11 +20,62 @@
           </nav>
     </header>
     <main>
-        
-        <div>
-
-        </div>
-    </main>
+        <form action="..." method="post" class="ukl">
+        <div class="rendered-form form-positioning custom-google-font">
+          <div>
+              <h1 access="false">Dane kontaktowe</h1></div>
+          <div class="formbuilder-text form-group">
+              <label for="godnosc" class="formbuilder-text-label"><span class="formbuilder-required">Podaj swoje imię i nazwisko:</span></label>
+              <input type="text" placeholder="Imie i nazwisko" class="form-control input-style" name="godnosc" access="false" required="required" aria-required="true">
+          </div>
+          <div class="formbuilder-text form-group">
+              <label for="email" class="formbuilder-text-label"><span class="formbuilder-required">Podaj e-mail który posłuży do kontaktu zwrotnego:</span></label>
+              <input type="email" placeholder="E-mail" class="form-control input-style" name="email" access="false"required="required" aria-required="true">
+          </div>
+          <div class="formbuilder-text form-group">
+              <label for="telefon" class="formbuilder-text-label"><span class="formbuilder-required">Podaj numer telefonu służący do weryfikacji tożsamości:</span></label>
+              <input type="tel" placeholder="Telefon komórkowy (+48)" class="form-control input-style" name="telefon" access="false" maxlength="9" required="required" aria-required="true">
+          </div>
+          <div>
+              <h1 access="false">Temat oraz treść wiadomości</h1></div>
+          <div class="formbuilder-text form-group">
+              <label for="temat" class="formbuilder-text-label"><span class="formbuilder-required">Podaj temat zgłoszenia:</span></label>
+              <input type="text" placeholder="Temat" class="form-control input-style" name="temat" access="false" maxlength="64" required="required" aria-required="true">
+          </div>
+          <div class="formbuilder-select form-group">
+              <label for="kategoria" class="formbuilder-select-label"><span class="formbuilder-required">Wybierz kategorię w jakiej mieści się wiadomość:</span></label>
+              <select class="form-control input-style2" name="kategoria" required="required" aria-required="true">
+                  <option disabled="null" selected="null">Kategoria</option>
+                  <option value="content" id="kategoria-0">Treść na stronie</option>
+                  <option value="errors" id="kategoria-1">Błędy strony</option>
+                  <option value="help" id="kategoria-2">Pomoc</option>
+              </select>
+          </div>
+          <div class="formbuilder-textarea form-group">
+              <label for="tekst" class="formbuilder-textarea-label"><span class="formbuilder-required">Opisz w tym oknie swój problem/spostrzeżenie:</span></label>
+              <textarea type="textarea" placeholder="Wiadomość" class="form-control input-style" name="tekst" access="false" maxlength="350" required="required" aria-required="true"></textarea>
+          </div>
+          <div>
+              <h1 access="false">Dołącz plik</h1></div>
+          <div class="formbuilder-file form-group">
+              <label for="plik" class="formbuilder-file-label"></label>
+              <input type="file" placeholder="Wybierz plik z dysku" class="form-control input-style2" name="plik[]" access="false" multiple="true">
+          </div>
+          <div class="formbuilder-checkbox-group form-group">
+              <label for="zgoda" class="formbuilder-checkbox-group-label"><span class="formbuilder-required"></span></label>
+              <div class="checkbox-group">
+                <div class="formbuilder-checkbox">
+                  <input type="checkbox" name="zgoda">
+                  <label>Wyrażam zgodę na przetwarzanie moich danych osobowych przez Suski S.A., ul. Strzelecka 9, 84-200 Wejherowo w celu i w zakresie niezbędnym do realizacji obsługi niniejszego zgłoszenia. Zapoznałem się z treścią informacji o sposobie przetwarzania moich danych osobowych jak w załączniku.</label>
+              </div>
+              </div>
+          </div>
+          <div>
+            <button class="button-64" role="button"><span class="text custom-google-font">Prześlij wiadomość</span></button>
+          </div>
+      </div>
+    </form>
+      </main>
     <script src="./scripts/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     </body>
