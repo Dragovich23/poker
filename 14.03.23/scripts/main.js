@@ -15,7 +15,7 @@ $('[href="#"]:eq(0)').attr('href', './index.html');
 $('a:eq(0)').html("Strona główna");
 $('a:eq(1)').html("Układy");
 $('a:eq(2)').html("Prawdopodobieństwa");
-$('a:eq(3)').html("Link 3");
+$('a:eq(3)').html("Strategie");
 $('a:eq(4)').html("Autorzy");
 $('a:eq(5)').html("Kontakt");
 
