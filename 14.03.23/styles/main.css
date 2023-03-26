@@ -29,18 +29,30 @@ article {
 ul {
     display: none;
 }
-.reklama {
+.aside {
     float: right; 
     width: 15%; 
     height: 1200px;
     margin-right: 70px;
-    display: initial;
+    display: initial !important; 
 }
 .main {
     width: 80%;
 }
 
-/* Animation property */
+table, th, td {
+  border: 1px solid;
+}
+table.sus {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ /* div.col > article.sus {
+  width: fit-content;
+} */
+
+/* Animacja */
 [aria-current="page"] {
     animation: szejker 2s linear infinite;
   }
