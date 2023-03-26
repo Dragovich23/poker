@@ -19,6 +19,26 @@ $('a:eq(3)').html("Strategie");
 $('a:eq(4)').html("Autorzy");
 $('a:eq(5)').html("Kontakt");
 
+$( document ).ready(function() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function() {myFunction(this);}
+    xhttp.open("GET", "szanse.xml");
+    xhttp.send();
+});
 
-
+  function myFunction(xml) {
+    const xmlDoc = xml.responseXML;
+    const x = xmlDoc.getElementsByTagName("ukl");
+    let table="<tr><th><b>Układ </b></th><th><b>Liczba możliwych układów </b></th><th><b>Prawdopodobieństwo </b></th></tr><br>";
+    for (let i = 0; i <x.length; i++) {
+      table += "<tr><td>" +
+      x[i].getElementsByTagName("nazwa")[0].childNodes[0].nodeValue +
+      "</td><td>" +
+      x[i].getElementsByTagName("liczba")[0].childNodes[0].nodeValue +
+      "</td><td>"+
+      x[i].getElementsByTagName("prawd")[0].childNodes[0].nodeValue +
+      "</td></tr><br>";
+    }
+    document.getElementsByClassName("sus").innerHTML = table;
+  }
 
