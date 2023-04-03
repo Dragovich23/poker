@@ -5,8 +5,7 @@ $("div.lista").mouseover(function() {
 $("div.lista").mouseleave(function() {
     $("ul").hide(300)
 });
-$('[href="#"]:eq(5)').attr('href', './contact.html'); 
-$('[href="#"]:eq(4)').attr('href', './footer.html'); 
+$('[href="#"]:eq(4)').attr('href', './contact.html'); 
 $('[href="#"]:eq(3)').attr('href', './index3.html');
 $('[href="#"]:eq(2)').attr('href', './index2.html');
 $('[href="#"]:eq(1)').attr('href', './uklady.html');
@@ -16,8 +15,11 @@ $('a:eq(0)').html("Strona główna");
 $('a:eq(1)').html("Układy");
 $('a:eq(2)').html("Prawdopodobieństwa");
 $('a:eq(3)').html("Strategie");
-$('a:eq(4)').html("Autorzy");
-$('a:eq(5)').html("Kontakt");
+$('a:eq(4)').html("Kontakt");
+
+$(function(){
+  $("footer").load("footer.html"); 
+});
 
 function myFunction(xml) {
     const xmlDoc = xml.responseXML;

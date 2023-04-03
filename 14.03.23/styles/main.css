@@ -6,6 +6,17 @@ header {
     justify-content: right;
     background-image: url(https://img.freepik.com/premium-vector/pattern-poker-casino-outline-poker-card-suits-black-background_47243-1334.jpg);
 }
+.body {
+  height: 1500px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+}
+footer.in {
+  position: absolute;
+  bottom: -200px;
+}
 .nav-link {
     background-color:crimson;
     margin: 3px;
